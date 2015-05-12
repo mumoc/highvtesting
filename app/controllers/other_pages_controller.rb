@@ -1,11 +1,11 @@
 require 'custom_pages_finder'
 
-class LandingPagesController < ApplicationController
+class OtherPagesController < ApplicationController
   include HighVoltage::StaticPage
 
   private
   def page_finder
-    page_finder_factory.new(params[:id], 'landing')
+    page_finder_factory.new(params[:id], 'other')
   end
 
   def page_finder_factory
